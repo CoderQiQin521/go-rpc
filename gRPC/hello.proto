@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "./protocol";
+
+package protocol;
+
+service SomeServer {
+  rpc SomeMethod(RequestParam) returns (ResponseData) {}
+}
+
+message RequestParam {
+  string name = 1;
+  int32 age = 2;
+}
+
+message ResponseData {
+  string result = 1;
+}
