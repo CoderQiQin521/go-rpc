@@ -2,7 +2,7 @@ package service
 
 import (
 	"fmt"
-	"rpc/simple/data"
+	"rpc/data"
 )
 
 type SomeServer int
